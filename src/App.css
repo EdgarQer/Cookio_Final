@@ -1,0 +1,74 @@
+.App {
+    font-family: "Helvetica Now Display";
+    margin: 0;
+    padding: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button,
+button:hover,
+button:focus {
+    font-family: inherit;
+    outline: none;
+    border: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Helvetica Now Display";
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 120%;
+    color: #000;
+}
+
+ul, li {
+    display: block;
+    margin: 0;
+    padding: 0;
+    color: #000;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+    line-height: 1.2em;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    letter-spacing: 0.02em;
+}
+
+a:hover {
+    text-decoration: none;
+    transition: 0.5s ease;
+}
+
+img {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+input, button {
+    max-width: 100%;
+    border: none;
+    outline: none;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 1320px;
+    margin: 0 auto;
+}

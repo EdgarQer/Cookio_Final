@@ -1,0 +1,119 @@
+.user-profile {
+    max-width: 820px;
+    margin: 100px auto; /* Added top margin to prevent overlap with the header */
+    padding: 30px 40px;
+    background-color: #fff;
+    border: 1px solid #e4e4e4;
+    border-radius: 10px;
+    box-shadow: 10px 10px 50px 0px rgba(0, 0, 0, 0.15);
+  }
+  
+  .profile-header {
+    display: flex;
+    align-items: flex-start; /* Ensures items align at the top */
+    margin-bottom: 20px;
+    flex-wrap: wrap; /* Ensures proper layout on smaller screens */
+  }
+  
+  .profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ccc;
+    margin-right: 20px;
+    margin-bottom: 10px; /* Space for smaller screens */
+  }
+  
+  .profile-info {
+    flex: 1;
+    min-width: 250px; /* Ensures fields don’t shrink too much */
+  }
+  
+  .profile-info h2 {
+    margin: 0;
+    font-size: 1.8em;
+  }
+  
+  .profile-info p {
+    margin: 5px 0;
+    color: #555;
+  }
+  
+  .profile-info input,
+  .profile-info textarea {
+    width: 90%;
+    margin-bottom: 10px;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  .profile-info textarea {
+    resize: none;
+    height: 60px;
+  }
+  
+  .profile-actions {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .profile-actions button {
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+  }
+
+  .add-recipe-button {
+    padding: 10px 20px;
+    font-weight: 500;
+    background-color: #1c1c1c;
+    color: white;
+    border-radius: 5px;
+}
+
+.add-recipe-button:hover {
+    background-color: #000;
+}
+  
+  .profile-actions button:hover {
+    background-color: #0171E9;
+  }
+  
+  .profile-actions button:nth-child(2) {
+    background-color: #5C5C5C;
+    margin-top: 15px;
+  }
+  
+  .profile-actions button:nth-child(2):hover {
+    background-color: #3c3c3c;
+  }
+  
+  .liked-posts {
+    margin-top: 30px;
+  }
+  
+  .liked-posts h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+  }
+  
+  .liked-posts ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .liked-posts li {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    background-color: #fff;
+  }
+  

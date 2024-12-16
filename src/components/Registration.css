@@ -1,0 +1,54 @@
+.registration-container {
+    margin-top: 100px; 
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .registration-container h2 {
+    margin-bottom: 20px;
+  }
+  
+  .registration-container .error,
+  .registration-container .success {
+    margin-bottom: 10px;
+  }
+  
+  .registration-container .error {
+    color: red;
+  }
+  
+  .registration-container .success {
+    color: green;
+  }
+  
+  .registration-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .registration-container input {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  .registration-container button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .registration-container button:hover {
+    background-color: #0056b3;
+  }
+  

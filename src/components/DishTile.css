@@ -1,0 +1,73 @@
+.dish-tile {
+    display: flex;
+    width: 420px;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 30px;
+    text-decoration: none;
+}
+
+.dish-tile:last-child {
+    margin-right: 0;
+}
+
+.dish-tile__image {
+    width: 420px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.dish-tile__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    align-self: stretch;
+}
+
+.dish-tile__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.dish-tile__name {
+    color: #000;
+    font-size: 24px;
+}
+
+.dish-tile__heart-icon {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.dish-tile__description {
+    font-size: 16px;
+    text-align: left;
+}
+
+.dish-tile__footer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+.dish-tile__time {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.dish-tile__clock-icon {
+    width: 20px;
+    height: 20px;
+}

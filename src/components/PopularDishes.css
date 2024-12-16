@@ -1,0 +1,14 @@
+.popular-dishes {
+    padding-top: 140px;
+}
+
+.popular-dishes__title {
+    margin-bottom: 60px;
+    font-size: 48px;
+}
+
+.popular-dishes__tiles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}

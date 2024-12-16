@@ -1,0 +1,13 @@
+.popular-articles {
+	padding: 140px 0;
+}
+
+.popular-articles__title {
+	margin-bottom: 60px;
+	font-size: 48px;
+}
+
+.popular-articles__tiles {
+	display: flex;
+	flex-wrap: wrap;
+}

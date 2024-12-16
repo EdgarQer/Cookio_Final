@@ -1,0 +1,110 @@
+/* SearchPage.css */
+
+/* General layout for the search page */
+.search-page {
+    margin-top: 100px; /* Pushes the search bar below the header */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Search bar container styling */
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Adds spacing between the input and button */
+    width: 100%;
+    max-width: 600px;
+    position: relative;
+    z-index: 1; /* Ensures the search bar appears above other elements */
+}
+
+/* Input styling */
+.search-input {
+    flex-grow: 1;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+}
+
+/* Button styling */
+.search-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-button:hover {
+    background-color: #0171E9;
+}
+
+/* Loading indicator styling */
+.loading {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #555;
+}
+
+/* Results container */
+.results {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Adds space between result cards */
+    justify-content: center;
+    width: 100%;
+}
+
+/* Individual result card styling */
+.result-card {
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    background: #fff;
+}
+
+.result-card:hover {
+    transform: scale(1.05); /* Adds hover effect */
+}
+
+/* Recipe image styling */
+.result-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+/* Recipe details */
+.result-details {
+    padding: 15px;
+    text-align: center;
+}
+
+.result-details h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.result-details p {
+    font-size: 14px;
+    color: #555;
+}
+
+/* No results message */
+.no-results {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #888;
+    text-align: center;
+}

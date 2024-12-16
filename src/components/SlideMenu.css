@@ -1,0 +1,93 @@
+/* SlideMenu.css */
+
+.slide-menu {
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+    padding-top: 70px;
+}
+
+.slide-menu__slide {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide-menu__image {
+    width: 100%;
+    height: 100vh;
+    max-height: 720px;
+    object-fit: cover;
+}
+
+.slide-menu__overlay {
+    position: absolute;
+    bottom: 50px;
+    left: 60px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.slide-menu__overlay h1 {
+    color: #ffffff;
+    margin: 0 0 12px 0;
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+.slide-menu__description {
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 120%;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.slide-menu__button {
+    font-size: 14px;
+    color: #000;
+    background-color: #fff;
+    cursor: pointer;
+    padding: 12px 50px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+/* Position the pagination at the bottom-right corner */
+.swiper-pagination {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px; /* Space between pagination dots */
+    padding: 0 90px 15px 0;
+}
+
+/* Base style for pagination bullets */
+.swiper-pagination-bullet {
+    width: 15px;
+    height: 15px;
+    background-color: #ffffff !important; /* Ensure default color is white */
+    border-radius: 50%;
+    opacity: 0.7;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Active state styling for the bullet */
+.swiper-pagination-bullet-active {
+    background-color: #ffffff !important; /* Override default blue color with white */
+    border: 1px solid #ffffff; /* Adds 1px white border */
+    box-sizing: border-box; /* Ensure border does not increase size */
+    opacity: 1;
+}
+
+/* Hover effect for pagination bullets */
+.swiper-pagination-bullet:hover {
+    opacity: 1;
+    transform: scale(1.1); /* Slight scale for visual feedback */
+}

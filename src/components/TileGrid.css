@@ -1,0 +1,109 @@
+
+.tile-grid {
+	display: grid;
+	grid-template-columns: 420px 420px 420px;
+	grid-template-rows: auto auto auto 450px; /* Added extra row for the full-width block */
+	grid-gap: 20px 30px;
+	max-width: 1320px;
+	margin: 0 auto;
+}
+
+.tile {
+	position: relative;
+	background-size: cover;
+	background-position: center;
+	color: white;
+	font-weight: bold;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 10px;
+	transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth, minimalistic animation */
+}
+
+.tile:hover {
+	transform: scale(1.03); /* Slight scale effect */
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Subtle shadow effect */
+}
+
+/* Column specific tile sizes */
+
+.tile-large .tile {
+	width: 420px;
+	height: 420px;
+}
+
+.tile-medium {
+	display: grid;
+	grid-template-rows: 200px 200px;
+	grid-gap: 20px;
+}
+
+.tile-medium .tile {
+	width: 420px;
+	height: 200px;
+}
+
+.tile-small {
+	display: grid;
+	grid-template-rows: repeat(3, 126px);
+	grid-gap: 20px;
+}
+
+.tile-small .tile {
+	width: 420px;
+	height: 126px;
+}
+
+/* Full-width tile */
+.tile-full {
+	grid-column: 1 / span 3;
+	width: 100%;
+	height: 450px;
+	margin-top: 10px; /* Adjusted to 10px as requested */
+}
+
+.tile--full {
+	width: 100%;
+	height: 100%;
+}
+
+/* Text Styles for Different Tile Sizes */
+.tile__text {
+	position: absolute;
+	padding: 0;
+	margin: 0;
+}
+
+/* Top-left alignment for large and medium tiles */
+.tile--large .tile__text,
+.tile--medium .tile__text {
+	top: 20px;
+	left: 25px;
+	max-width: 80%;
+}
+
+/* Bottom-left alignment for small tiles */
+.tile--small .tile__text {
+	bottom: 15px;
+	left: 20px;
+	max-width: 80%;
+}
+
+/* Specific styling for full-width tile text */
+.tile__text--full {
+	top: 30px;
+	left: 35px;
+	width: 440px; /* Width of the title in the full-width tile */
+	font-size: 48px;
+}
+
+/* Font Sizes */
+.tile__text--large {
+	font-size: 36px;
+}
+
+.tile__text--medium,
+.tile__text--small {
+	font-size: 24px;
+}
